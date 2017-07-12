@@ -6,7 +6,7 @@ body {
 .ribbon {
   font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-  width: 868px;
+  width: 867px;
   height: 30px;
   top: 60px;
   display:inline-block;

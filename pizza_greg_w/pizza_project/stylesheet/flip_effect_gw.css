@@ -1,0 +1,78 @@
+.flip-container {
+	perspective: 1000;
+}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 0px 10px 10px 10px;
+}
+
+.flipper {
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    -webkit-transform: rotatex(-180deg);
+    -moz-transform: rotatex(-180deg);
+    -o-transform: rotatex(-180deg);
+    -ms-transform: rotatex(-180deg);
+    transform: rotatex(-180deg);
+}
+
+.flip-container:hover .back, .flip-container.hover .back {
+    -webkit-transform: rotatex(0deg);
+    -moz-transform: rotatex(0deg);
+    -o-transform: rotatex(0deg);
+    -ms-transform: rotatex(0deg);
+    transform: rotatex(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotatex(-180deg);
+    -moz-transform: rotatex(-180deg);
+    -o-transform: rotatex(-180deg);
+    transform: rotatex(-180deg);
+}
+
+
+.front {
+    z-index: 2;
+}
+
+ transform: rotate(90deg) scale(1) skew(1deg) translate(10px);
+    -webkit-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);
+    -moz-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);
+    -o-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);
+    -ms-transform: rotate(90deg) scale(1) skew(1deg) translate(10px);
