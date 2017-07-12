@@ -9,7 +9,7 @@
 	width: 100%;
 }
 
-.ch-grid_nav:after, 
+.ch-grid_nav:after,
 .ch-item_nav:before {
 	content: '';
     display: table;
@@ -74,12 +74,12 @@
 	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 }
 .ch-info_nav h3 {
-	font-family: 'Life Savers', cursive;
+	font-family: 'Coming Soon', cursive;
 	font-size: 36px;
 	color: #115C9A;
 }
 .ch-info_nav h4 {
-	font-family: 'Life Savers', cursive;
+	font-family: 'Coming Soon', cursive;
 	font-size: 36px;
 	color: #fff;
 }
